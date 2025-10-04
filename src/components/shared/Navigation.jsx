@@ -1,7 +1,7 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAuth, useData, useProductsData } from "contexts";
-import logo from "assets/images/logo.png";
+import logo from "assets/images/NavbarLogo.png";
 import "./nav.css";
 import { useEffect, useRef, useState } from "react";
 

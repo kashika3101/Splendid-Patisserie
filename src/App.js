@@ -20,6 +20,7 @@ import {
   ScrollToTop,
   SignupForm,
   Wishlist,
+  ScrollHideBar, 
 } from "components";
 import { useEffect } from "react";
 import { useAuth, useData } from "contexts";
@@ -67,6 +68,7 @@ function App() {
   return (
     <div className="App pagewrapper ">
       <Navigation />
+      <ScrollHideBar />
       <ScrollToTop />
       <ToastContainer position="bottom-right" autoClose={800} draggable />
       <Routes>

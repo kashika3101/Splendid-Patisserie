@@ -1,0 +1,101 @@
+.scroll-hide-bar {
+  position: fixed;
+  top: 64px; /* adjust according to navbar height */
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  z-index: 50;
+  transform: translateY(0);
+  opacity: 1;
+  transition: none; /* removed smooth transition */
+}
+
+.scroll-hide-bar.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.scroll-hide-bar.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Menu styling */
+.scroll-hide-bar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 14px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  flex-wrap: wrap;
+}
+
+/* Base buttons */
+.scroll-hide-bar .menu button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 6px 0;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+/* Hover underline animation */
+.scroll-hide-bar .menu button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #e63946;
+  transition: width 0.3s ease;
+}
+
+.scroll-hide-bar .menu button:hover {
+  color: #e63946;
+}
+
+.scroll-hide-bar .menu button:hover::after {
+  width: 100%;
+}
+
+/* Special Hampers button with badge */
+.scroll-hide-bar .menu-item-with-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-badge {
+  position: absolute;
+  top: -12px;
+  right: -20px;
+  background-color: #e63946;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 1px 5px;
+  line-height: 1;
+  animation: popIn 0.5s ease;
+}
+
+/* Smooth badge appearance animation */
+@keyframes popIn {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

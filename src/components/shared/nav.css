@@ -13,6 +13,11 @@
   z-index: 6;
 }
 
+.brand-logo{
+  opacity: transparent;
+  background-color: transparent;
+}
+
 .brand,
 .nav-right {
   align-items: center;
