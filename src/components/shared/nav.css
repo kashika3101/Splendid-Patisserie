@@ -8,7 +8,7 @@
   justify-content: space-between;
   padding: 0.7rem 0.7rem 0 0.7rem;
   position: sticky;
-  background-color: var(--light-color);
+  background-color: #d81b60;
   top: 0;
   z-index: 6;
 }
@@ -33,13 +33,17 @@
 .brand-name {
   align-self: center;
   color: var(--primary-color);
-  font-family: "Bree Serif", serif;
+  font-family: 'Great Vibes', cursive;
   font-size: 1.8rem;
   font-weight: 600;
   justify-self: flex-start;
   margin-left: -0.625rem;
   margin-right: 0.8rem;
   text-decoration: none;
+  color: #fff0f5;
+  /* text-shadow: 1px 1px 2px rgba(255, 182, 193, 0.6); */
+  word-spacing: 10px;
+  letter-spacing: 1px;
 }
 
 .nav-container > ul > li {
@@ -63,6 +67,7 @@
   padding: 1rem;
 }
 
+
 .nav-item {
   color: var(--default-color);
   display: inline-block;
@@ -70,6 +75,9 @@
 }
 
 .nav-active {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
   color: var(--primary-color);
   font-size: 1rem;
   font-weight: 600;
@@ -80,7 +88,7 @@
 }
 
 .searchbar-container {
-  background-color: var(--gray-color);
+  background-color: #fff0f5; 
   border-radius: 5px;
   display: inline-flex;
   height: 1.5rem;
@@ -96,7 +104,7 @@
   max-height: 60vh;
   overflow-y: scroll;
   width: 22rem;
-  background-color: var(--light-color);
+  background-color: #d81b60;
 }
 
 .suggestion {
@@ -133,6 +141,10 @@
   padding: 8px;
   width: 100%;
 }
+.nav-search-field::placeholder {
+  color: #d81b60;
+  opacity: 0.5;
+}
 
 .nav-search-field:focus {
   outline: none;
@@ -149,9 +161,14 @@
 }
 
 .search-icon {
-  color: var(--default-color);
+  color: #d81b60;
+  opacity: 0.5;
   font-size: 1.2rem;
   padding: 2px;
+}
+
+.icon-person .icon-style , .badge .icon-style{
+  color: #fff0f5;
 }
 
 .inline-flex {

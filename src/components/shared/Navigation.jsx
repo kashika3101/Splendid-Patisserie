@@ -1,7 +1,7 @@
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useAuth, useData, useProductsData } from "contexts";
-import logo from "assets/images/logo.webp";
+import logo from "assets/images/logo.png";
 import "./nav.css";
 import { useEffect, useRef, useState } from "react";
 
@@ -54,12 +54,12 @@ function Navigation() {
       <nav className="nav-container">
         <div className="brand">
           <Link to="/">
-            <img src={logo} alt="muffin-logo" className="logo" />
+            <img src={logo} alt="brand-logo" className="logo" />
           </Link>
           <Link to="/" className="brand-name">
-            Bakin Lane
+            Splendid Patisserie
           </Link>
-          <NavLink
+          {/* <NavLink
             to="/"
             className={({ isActive }) =>
               isActive ? "nav-item nav-active" : "nav-item"
@@ -74,20 +74,22 @@ function Navigation() {
             }
           >
             Buy Now
-          </NavLink>
+          </NavLink> */}
         </div>
         <div className="nav-right">
           <form onSubmit={searchHandler} className="searchbar-container">
+            <button className="btn-no-decoration" type="submit">
+              <FontAwesomeIcon icon="search" className="search-icon" />
+            </button>
             <input
               type="search"
               placeholder="Search for Items"
               className="nav-search-field"
+              color="white"
               value={searchBarText}
               onChange={(e) => setSearchBarText(e.target.value)}
             />
-            <button className="btn-no-decoration" type="submit">
-              <FontAwesomeIcon icon="search" className="search-icon" />
-            </button>
+            
             <div className="suggestions">
               {searchResult.length > 0
                 ? searchResult.map((word) => (
