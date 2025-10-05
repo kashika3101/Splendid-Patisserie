@@ -6,7 +6,7 @@
   display: flex;
   height: 3.5rem;
   justify-content: space-between;
-  padding: 0.7rem 0.7rem 0 0.7rem;
+  padding: 0.7rem 1rem;
   position: sticky;
   background-color: #d81b60;
   top: 0;
@@ -141,8 +141,9 @@
 
 .nav-search-field {
   background-color: transparent;
+  font-style: italic;
   border: none;
-  font-size: 14px;
+  font-size: 12px;
   padding: 8px;
   width: 100%;
 }
@@ -218,13 +219,13 @@
     display: inline-flex;
   }
 
-  .brand-name {
+  /* .brand-name {
     display: none;
   }
 
   .brand > .nav-item:nth-child(3) {
     display: none;
-  }
+  } */
 
   .nav-icon {
     padding: 10px;

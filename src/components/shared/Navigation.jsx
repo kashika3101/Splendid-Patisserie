@@ -53,12 +53,12 @@ function Navigation() {
     <>
       <nav className="nav-container">
         <div className="brand">
-          <Link to="/">
+          <NavLink to="/">
             <img src={logo} alt="brand-logo" className="logo" />
-          </Link>
-          <Link to="/" className="brand-name">
+          </NavLink>
+          <NavLink to="/" className="brand-name">
             Splendid Patisserie
-          </Link>
+          </NavLink>
           {/* <NavLink
             to="/"
             className={({ isActive }) =>
@@ -83,7 +83,7 @@ function Navigation() {
             </button>
             <input
               type="search"
-              placeholder="Search for Items"
+              placeholder="Search for Cakes, Flavours, Hampers And More..."
               className="nav-search-field"
               color="white"
               value={searchBarText}
